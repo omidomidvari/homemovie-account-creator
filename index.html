@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Homemovie — Mock Signup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Homemovie — Mock Signup</h1>
+  <form id="signupForm">
+    <label>Username
+      <input type="text" id="username" required>
+    </label>
+    <label>Email
+      <input type="email" id="email" required>
+    </label>
+    <label>Password
+      <input type="password" id="password" required>
+    </label>
+    <div class="actions">
+      <button type="submit">Sign Up</button>
+      <button type="button" id="exportBtn">Export CSV</button>
+      <button type="button" id="clearBtn">Clear All</button>
+    </div>
+  </form>
+
+  <section class="bulk">
+    <h2>Bulk</h2>
+    <label>Generate count <input type="number" id="bulkCount" min="1" value="5"></label>
+    <button id="generateBtn">Generate Accounts</button>
+    <label class="file">Import CSV
+      <input type="file" id="csvFile" accept=".csv">
+    </label>
+  </section>
+
+  <section>
+    <h2>Created Accounts</h2>
+    <ul id="accountsList"></ul>
+  </section>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
